@@ -325,7 +325,7 @@ oidc-enabled: false
 # they log in.
 # Examples: ["Google", "Dex", "Auth0"]
 # Default: ""
-oidc-idp-name: ""
+oidc-idp-name: "YunoHost"
 
 # Bool. Skip the normal verification flow of tokens returned from the OIDC provider, ie.,
 # don't check the expiry or signature. This should only be used in debugging or testing,
@@ -338,17 +338,17 @@ oidc-skip-verification: false
 # Typically this will look like a standard web URL.
 # Examples: ["https://auth.example.org", "https://example.org/auth"]
 # Default: ""
-oidc-issuer: ""
+oidc-issuer: "__DEX_DOMAIN__"
 
 # String. The ID for this client as registered with the OIDC provider.
 # Examples: ["some-client-id", "fda3772a-ad35-41c9-9a59-f1943ad18f54"]
 # Default: ""
-oidc-client-id: ""
+oidc-client-id: "__DEX_CLIENT_ID__"
 
 # String. The secret for this client as registered with the OIDC provider.
 # Examples: ["super-secret-business", "79379cf5-8057-426d-bb83-af504d98a7b0"]
 # Default: ""
-oidc-client-secret: ""
+oidc-client-secret: "__DEX_CLIENT_SECRET__"
 
 # Array of string. Scopes to request from the OIDC provider. The returned values will be used to
 # populate users created in GtS as a result of the authentication flow. 'openid' and 'email' are required.
